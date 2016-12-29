@@ -71,8 +71,8 @@ int main(int argc, const char * argv[]) {
     
     while(fgets(inputString, 13, input)){
         
-        char *instructionBase = (char *)malloc(sizeof(char));
-        memset(instructionBase, 0, sizeof(char));
+        char *instructionBase = (char *)malloc(sizeof(char)*32);
+        memset(instructionBase, 0, 32);
         
         if (DEBUG) printf("%s\n", inputString);
         
